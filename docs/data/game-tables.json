@@ -1,0 +1,344 @@
+{
+ "_doc": "Tabelas extraídas do APK v67 (com.lvluplife.lvluplife). level_xp_thresholds[i] = XP total mínimo para estar no nível i+1; o nível é o maior i tal que xp >= thresholds[i-1] (nível máximo 60). base_xp_by_level[lvl] * limit = XP de um achievement (limit: 1=dia, 2=semana, 3=mês, 4=ano, 5=uma vez). custom_skill_points_by_level[lvl][opção] com opção 0=None,1=Low,2=Medium,3=High, multiplicado por custom_limit_multiplier[limit] e arredondado (mínimo 1).",
+ "level_xp_thresholds": [
+  0,
+  200,
+  700,
+  1500,
+  2625,
+  4185,
+  6335,
+  9275,
+  13275,
+  18675,
+  25865,
+  35210,
+  47105,
+  61975,
+  80275,
+  102575,
+  129610,
+  162060,
+  200970,
+  247495,
+  302850,
+  368575,
+  446280,
+  538000,
+  646080,
+  773260,
+  922775,
+  1098325,
+  1302300,
+  1536290,
+  1802100,
+  2103410,
+  2442220,
+  2822270,
+  3245370,
+  3713460,
+  4230455,
+  4799955,
+  5424990,
+  6109525,
+  6857645,
+  7673645,
+  8563200,
+  9532200,
+  10586245,
+  11730735,
+  12970870,
+  14311650,
+  15758075,
+  17315145,
+  18987860,
+  20781220,
+  22700225,
+  24749875,
+  26935170,
+  29261110,
+  31732695,
+  34354925,
+  37132800,
+  40071320,
+  43175485
+ ],
+ "max_level": 60,
+ "max_unlock_level_for_achievements": 20,
+ "energy": {
+  "max_completions": 20,
+  "window_minutes": 60,
+  "rule": "janela deslizante: conta conclusões não excluídas nos últimos 60 min; HNUM = 20 - count"
+ },
+ "limit_codes": {
+  "1": "max. uma vez por dia",
+  "2": "max. uma vez por semana",
+  "3": "max. uma vez por mês",
+  "4": "max. uma vez por ano",
+  "5": "uma única vez na vida"
+ },
+ "limit_lock_rule": "após completar, bloqueia até 23:59:59 (fuso do usuário) do dia atual + (24h | 168h | 1 mês | 1 ano); limit 5 bloqueia para sempre",
+ "base_xp_by_level": [
+  null,
+  70,
+  85,
+  100,
+  125,
+  150,
+  180,
+  225,
+  275,
+  325,
+  385,
+  455,
+  525,
+  600,
+  675,
+  750,
+  825,
+  900,
+  975,
+  1055,
+  1135,
+  1215,
+  1300,
+  1385,
+  1470,
+  1560,
+  1650,
+  1740,
+  1825,
+  1915,
+  2000
+ ],
+ "custom_skill_points_by_level": {
+  "1": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "2": [
+   0,
+   1,
+   2,
+   4
+  ],
+  "3": [
+   0,
+   2,
+   4,
+   6
+  ],
+  "4": [
+   0,
+   2,
+   5,
+   7
+  ],
+  "5": [
+   0,
+   3,
+   6,
+   8
+  ],
+  "6": [
+   0,
+   3,
+   7,
+   9
+  ],
+  "7": [
+   0,
+   4,
+   8,
+   10
+  ],
+  "8": [
+   0,
+   5,
+   9,
+   11
+  ],
+  "9": [
+   0,
+   6,
+   10,
+   12
+  ],
+  "10": [
+   0,
+   7,
+   11,
+   13
+  ],
+  "11": [
+   0,
+   8,
+   12,
+   14
+  ],
+  "12": [
+   0,
+   9,
+   13,
+   15
+  ],
+  "13": [
+   0,
+   10,
+   14,
+   16
+  ],
+  "14": [
+   0,
+   11,
+   15,
+   17
+  ],
+  "15": [
+   0,
+   12,
+   16,
+   18
+  ],
+  "16": [
+   0,
+   13,
+   17,
+   19
+  ],
+  "17": [
+   0,
+   14,
+   18,
+   20
+  ],
+  "18": [
+   0,
+   15,
+   19,
+   21
+  ],
+  "19": [
+   0,
+   16,
+   20,
+   22
+  ],
+  "20": [
+   0,
+   17,
+   21,
+   23
+  ],
+  "21": [
+   0,
+   18,
+   22,
+   24
+  ],
+  "22": [
+   0,
+   19,
+   23,
+   25
+  ],
+  "23": [
+   0,
+   20,
+   24,
+   26
+  ],
+  "24": [
+   0,
+   21,
+   25,
+   27
+  ],
+  "25": [
+   0,
+   22,
+   26,
+   28
+  ],
+  "26": [
+   0,
+   23,
+   27,
+   29
+  ],
+  "27": [
+   0,
+   24,
+   28,
+   30
+  ],
+  "28": [
+   0,
+   25,
+   29,
+   31
+  ],
+  "29": [
+   0,
+   26,
+   30,
+   32
+  ],
+  "30": [
+   0,
+   27,
+   31,
+   33
+  ]
+ },
+ "custom_limit_multiplier": {
+  "1": 1.0,
+  "2": 1.0,
+  "3": 1.5,
+  "4": 2.0,
+  "5": 3.0
+ },
+ "custom_achievement_rules": {
+  "difficulty_level": "1..min(nível do usuário, 20)",
+  "xp": "base_xp_by_level[nível] * limit",
+  "tasknum": ">= 9001, por usuário",
+  "unique_name_per_category": true
+ },
+ "skills": {
+  "STR": "Strength",
+  "CUL": "Culture",
+  "ENV": "Environment",
+  "CHA": "Charisma",
+  "TAL": "Talent",
+  "INT": "Intellect"
+ },
+ "skill_bar_rule": "barra de cada skill = pontos / maior skill do usuário * 100",
+ "categories": {
+  "art": "Arts & Creativity",
+  "car": "Career & Finances",
+  "fit": "Fitness & Health",
+  "foo": "Food & Cooking",
+  "fun": "Fun",
+  "hou": "Household & DIY",
+  "hum": "Humanity",
+  "men": "Mental",
+  "out": "Outdoors",
+  "rea": "Reading",
+  "sch": "School & Learning",
+  "soc": "Social",
+  "tra": "Travel",
+  "goa": "MY GOALS (virtual: favoritos)",
+  "old": "legado (não listado)",
+  "new": "código anômalo, 1 item"
+ },
+ "subcategory_icons": {
+  "mus": "Music",
+  "pho": "Photography",
+  "wri": "Writing",
+  "spo": "Sports",
+  "top": "Top 150 (Reading)",
+  "des": "Destinations (Travel)"
+ }
+}
